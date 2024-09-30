@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment/>
+    <entry key="searchName">
+        SELECT *
+            FROM TEST1
+        WHERE USER_NAME = ?
+    </entry>
+    <entry key="searchCode">
+        SELECT
+            A.USER_NAME
+        ,   B.USER_CODE
+            FROM TEST1 A
+        JOIN TESTBUY B USING(USER_NAME)
+        WHERE B.USER_NAME = ?
+    </entry>
+
+
+
+</properties>
